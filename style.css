@@ -1,0 +1,156 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4776e6, #8e54e9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Dashboard */
+.weather-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #30206f;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 12px 15px;
+    background: #5636c9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #3e2699;
+}
+
+/* Weather Card */
+.weather-card {
+    text-align: center;
+    background: linear-gradient(135deg, #e8efff, #f2eaff);
+    padding: 25px 18px;
+    border-radius: 15px;
+}
+
+.weather-card h2 {
+    color: #30206f;
+    font-size: 25px;
+}
+
+#date {
+    color: #777;
+    margin-top: 8px;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin-top: 15px;
+}
+
+#temperature {
+    font-size: 45px;
+    color: #30206f;
+    margin: 8px 0;
+}
+
+#condition {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Weather Details */
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.weather-details div {
+    flex: 1;
+    background: white;
+    padding: 15px 8px;
+    border-radius: 10px;
+}
+
+.weather-details span {
+    font-size: 25px;
+}
+
+.weather-details p {
+    color: #777;
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.weather-details strong {
+    color: #30206f;
+}
+
+/* Information Note */
+.note {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 18px;
+    line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+    .weather-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .weather-details div {
+        padding: 12px 5px;
+    }
+}
